@@ -4,11 +4,17 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:communiTrade"
+        xmlns:viewModel="clr-namespace:communiTrade.MVVM.ViewModel"
         mc:Ignorable="d"
         Title="MainWindow" Height="600" Width="920" 
         WindowStyle="None" ResizeMode="NoResize"
         Background="Transparent"
         AllowsTransparency="True">
+
+    <Window.DataContext>
+        <viewModel:MainViewModel/>
+    </Window.DataContext>
+    
     <Border Background="#272537"
         CornerRadius="10">
         <Grid>
@@ -31,45 +37,49 @@
             <StackPanel Grid.Row="1">
 
                 <RadioButton Content="Home"
-                         Height="50"
-                         Foreground="White"
-                         FontSize="14"
-                         Style="{StaticResource MenuButtonTheme}"/>
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"
+                             IsChecked="True"
+                             Command="{Binding HomeViewComand}"/>
 
                 <RadioButton Content="Discovery"
-                         Height="50"
-                         Foreground="White"
-                         FontSize="14"
-                         Style="{StaticResource MenuButtonTheme}"/>
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding DiscoveryViewCommand}"/>
 
                 <RadioButton Content="Featured"
-                         Height="50"
-                         Foreground="White"
-                         FontSize="14"
-                         Style="{StaticResource MenuButtonTheme}"/>
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
+                
                 <RadioButton Content="Near me"
-         Height="50"
-         Foreground="White"
-         FontSize="14"
-         Style="{StaticResource MenuButtonTheme}"/>
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
 
                 <RadioButton Content="Favourites"
-         Height="50"
-         Foreground="White"
-         FontSize="14"
-         Style="{StaticResource MenuButtonTheme}"/>
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
 
                 <RadioButton Content="My Posts"
-         Height="50" 
-         Foreground="White"
-         FontSize="14"
-         Style="{StaticResource MenuButtonTheme}"/>
+                             Height="50" 
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
 
                 <RadioButton Content="Messages"
-         Height="50"
-         Foreground="White"
-         FontSize="14"
-         Style="{StaticResource MenuButtonTheme}"/>
+                             Height="50"
+                             Foreground="White"
+                             FontSize="14"
+                             Style="{StaticResource MenuButtonTheme}"/>
 
             </StackPanel>
 
@@ -82,10 +92,8 @@
                  Grid.Column="1"
                  Style="{StaticResource ModernTextbox}"/>
 
-            <Border Grid.Column="1" Grid.Row="1" Margin="5" 
-                BorderBrush="#FFB39898" Background="White"
-                CornerRadius="5">
-            </Border>
+            <ContentControl Grid.Row="1" Grid.Column="1" Margin="10"
+                            Content="{Binding CurrentView}"/>
 
         </Grid>
 

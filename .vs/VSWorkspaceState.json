@@ -1,6 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\communitrade2",
+    "\\communitrade2\\communiTrade"
   ],
+  "SelectedNode": "\\communitrade2\\communiTrade\\MainWindow.xaml",
   "PreviewInSolutionExplorer": false
 }
