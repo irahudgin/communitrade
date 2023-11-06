@@ -11,9 +11,12 @@ namespace communiTrade.MVVM.ViewModel
     {
 
         public RelayCommand HomeViewComand{ get; set; }
+        public RelayCommand RegisterViewComand { get; set; }
+
         public RelayCommand DiscoveryViewCommand{ get; set; }
 
         public HomeViewModel HomeVm{ get; set; }
+        public RegisterViewModel RegisterVm { get; set; }
         public DiscoveryViewModel DiscoveryVM{ get; set; }
 
         private object _currentView;
@@ -30,13 +33,20 @@ namespace communiTrade.MVVM.ViewModel
 		public MainViewModel() 
 		{
 			HomeVm = new HomeViewModel();
+			RegisterVm = new RegisterViewModel();
 			DiscoveryVM = new DiscoveryViewModel();
+
 			CurrentView = HomeVm;
 
 			HomeViewComand = new RelayCommand(obj => 
 			{
 				CurrentView = HomeVm;
 			});
+
+            RegisterViewComand = new RelayCommand(obj =>
+            {
+                CurrentView = RegisterVm;
+            });
 
             DiscoveryViewCommand = new RelayCommand(obj =>
             {

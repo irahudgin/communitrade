@@ -31,11 +31,11 @@
 
                 <Grid>
                     <StackPanel>
-                        <TextBlock Text="World leader&#x0a;in global finance"
+                        <TextBlock Text="Trade your items&#x0a;today!"
                                    Foreground="White"
                                    FontSize="28"
                                    Margin="20,10,10,0"/>
-                        <TextBlock Text="Get started today!"
+                        <TextBlock Text="Get started."
                                    Foreground="White"
                                    FontSize="18"
                                    Margin="20,10,10,0"/>
