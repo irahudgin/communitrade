@@ -80,6 +80,16 @@
                              Foreground="White"
                              FontSize="14"
                              Style="{StaticResource MenuButtonTheme}"/>
+                <RadioButton Content="Register"
+                            Height="50"
+                            Foreground="White"
+                            FontSize="14"
+                            Style="{StaticResource MenuButtonTheme}"/>
+                <RadioButton Content="Log In"
+                            Height="50"
+                            Foreground="White"
+                            FontSize="14"
+                            Style="{StaticResource MenuButtonTheme}"/>
 
             </StackPanel>
 
