@@ -84,12 +84,15 @@
                             Height="50"
                             Foreground="White"
                             FontSize="14"
-                            Style="{StaticResource RegisterViewComand}"/>
+                            Style="{StaticResource MenuButtonTheme}"
+                            Command="{Binding RegisterViewComand}"/>
+                
                 <RadioButton Content="Log In"
                             Height="50"
                             Foreground="White"
                             FontSize="14"
-                            Style="{StaticResource MenuButtonTheme}"/>
+                            Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding LoginViewCommand}"/>
 
 
             </StackPanel>

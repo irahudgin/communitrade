@@ -5,21 +5,32 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:local="clr-namespace:communiTrade.MVVM.View"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="#1B1B1B">
 
-    <Grid Background="#FFF3F6F0" Margin="0,0,0,-64">
-        <Image Source="/Images/trading2.png" Stretch="Fill" Grid.RowSpan="5"/>
+    <Grid Margin="0,0,0,-64">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*"/>
+            <ColumnDefinition Width="0*"/>
+            <ColumnDefinition Width="12*"/>
+        </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto" MinHeight="75.583"/>
-            <RowDefinition/>
+            <RowDefinition Height="*"/>
             <RowDefinition Height="Auto" MinHeight="0"/>
         </Grid.RowDefinitions>
 
         <!-- Title for the Register View -->
-        <TextBlock Grid.Row="0" Text="Register" FontSize="26" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,20,0,21" RenderTransformOrigin="0.434,-0.045" Width="100" Foreground="Black" />
+        <TextBlock Text="Register"
+           Foreground="White"
+           FontSize="28"
+           HorizontalAlignment="Left"
+           Margin="0,0,0,20" />
 
 
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center" Height="343" Width="220" Background="#B3000000">
+
+
+        <StackPanel Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Height="343" Width="220" Background="#B3000000" Grid.ColumnSpan="3" Margin="290,0,0,0">
 
             <!-- Username Label and TextBox -->
             <Label Content="Username" FontSize="14" Foreground="White"/>
@@ -53,9 +64,9 @@
         </StackPanel>
 
         <!-- Create Account Button -->
-        <Button Grid.Row="2" Content="Create Account" HorizontalAlignment="Center" Margin="0,20,0,20" Width="162"
+        <Button Grid.Row="1" Content="Create Account" HorizontalAlignment="Left" Margin="141,148,0,184" Width="162"
         FontSize="16" Padding="10,5" FontFamily="Segoe UI" FontWeight="SemiBold"
-        Background="Black" Foreground="White" BorderBrush="Transparent"/>
+        Background="Black" Foreground="White" BorderBrush="Transparent" Grid.Column="2"/>
 
     </Grid>
 </UserControl>
