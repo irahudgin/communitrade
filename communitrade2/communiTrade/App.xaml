@@ -24,6 +24,22 @@
                 <view:LoginView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewModel:MessagesViewModel}">
+                <view:MessagesView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:MyPostsViewModel}">
+                <view:MyPostsView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:FavouritesViewModel}">
+                <view:FavouritesView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewModel:FeaturedViewModel}">
+                <view:FeaturedView/>
+            </DataTemplate>
+
             <DataTemplate DataType="{x:Type viewModel:DiscoveryViewModel}">
                 <view:DiscoveryView/>
             </DataTemplate>

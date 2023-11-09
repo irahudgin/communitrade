@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\App.xaml
-7-697467125
+119118088
 
-18882566490
+261101800264
 13-1310406943
-MainWindow.xaml;MVVM\View\DiscoveryView.xaml;MVVM\View\HomeView.xaml;MVVM\View\LoginView.xaml;MVVM\View\RegisterView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
+MainWindow.xaml;MVVM\View\DiscoveryView.xaml;MVVM\View\FavouritesView.xaml;MVVM\View\FeaturedView.xaml;MVVM\View\HomeView.xaml;MVVM\View\LoginView.xaml;MVVM\View\MessagesView.xaml;MVVM\View\MyPostsView.xaml;MVVM\View\RegisterView.xaml;Theme\MenuButtonTheme.xaml;Theme\TextBoxTheme.xaml;
 
 True
 

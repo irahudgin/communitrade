@@ -49,3 +49,11 @@ C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\c
 C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\communiTrade.csproj.CoreCompileInputs.cache
 C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\communiTrade.exe
 C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\communiTrade.pdb
+C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\MVVM\View\MessagesView.g.cs
+C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\MVVM\View\MessagesView.baml
+C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\MVVM\View\MyPostsView.g.cs
+C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\MVVM\View\MyPostsView.baml
+C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\MVVM\View\FavouritesView.g.cs
+C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\MVVM\View\FavouritesView.baml
+C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\MVVM\View\FeaturedView.g.cs
+C:\Users\irahu\source\repos\AppDevProject\communitrade2\communiTrade\obj\Debug\MVVM\View\FeaturedView.baml

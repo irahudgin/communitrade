@@ -72,6 +72,7 @@
         </StackPanel>
         <StackPanel>
 
+            
             <StackPanel.Resources>
                 <Style TargetType="{x:Type Border}">
                     <Setter Property="Margin" Value="15,0,0,0"/>

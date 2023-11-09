@@ -44,42 +44,33 @@
                              IsChecked="True"
                              Command="{Binding HomeViewComand}"/>
 
-                <RadioButton Content="Discovery"
-                             Height="50"
-                             Foreground="White"
-                             FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"
-                             Command="{Binding DiscoveryViewCommand}"/>
-
                 <RadioButton Content="Featured"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
-                
-                <RadioButton Content="Near me"
-                             Height="50"
-                             Foreground="White"
-                             FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding FeaturedViewCommand}"/>
 
                 <RadioButton Content="Favourites"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding FavouritesViewCommand}"/>
 
                 <RadioButton Content="My Posts"
                              Height="50" 
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding MyPostsViewCommand}"/>
 
                 <RadioButton Content="Messages"
                              Height="50"
                              Foreground="White"
                              FontSize="14"
-                             Style="{StaticResource MenuButtonTheme}"/>
+                             Style="{StaticResource MenuButtonTheme}"
+                             Command="{Binding MessagesViewCommand}"/>
                 <RadioButton Content="Register"
                             Height="50"
                             Foreground="White"
