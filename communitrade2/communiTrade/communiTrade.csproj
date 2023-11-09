@@ -111,6 +111,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MVVM\Model\Item.cs" />
+    <Compile Include="MVVM\Model\Message.cs" />
+    <Compile Include="MVVM\Model\Response.cs" />
+    <Compile Include="MVVM\Model\User.cs" />
     <Compile Include="MVVM\ViewModel\DiscoveryViewModel.cs" />
     <Compile Include="MVVM\ViewModel\FavouritesViewModel.cs" />
     <Compile Include="MVVM\ViewModel\FeaturedViewModel.cs" />
@@ -172,7 +176,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Fonts\" />
-    <Folder Include="MVVM\Model\" />
   </ItemGroup>
   <ItemGroup>
     <Resource Include="Images\man.png" />
