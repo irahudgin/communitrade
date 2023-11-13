@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace communiTrade.MVVM.Model
 {
-    internal class Item
+    public class Item
     {
         public int itemID { get; set; }
         public int sellerID { get; set; }

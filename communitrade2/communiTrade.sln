@@ -5,6 +5,8 @@ VisualStudioVersion = 17.7.34031.279
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "communiTrade", "communiTrade\communiTrade.csproj", "{5F34D948-3EDA-4FC9-B2F1-F6AD96487A7B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "communiTrade.Tests", "communiTrade.Tests\communiTrade.Tests.csproj", "{837779D3-748A-4BDA-B6DD-5B864F91DC70}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{5F34D948-3EDA-4FC9-B2F1-F6AD96487A7B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F34D948-3EDA-4FC9-B2F1-F6AD96487A7B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5F34D948-3EDA-4FC9-B2F1-F6AD96487A7B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{837779D3-748A-4BDA-B6DD-5B864F91DC70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837779D3-748A-4BDA-B6DD-5B864F91DC70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{837779D3-748A-4BDA-B6DD-5B864F91DC70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{837779D3-748A-4BDA-B6DD-5B864F91DC70}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

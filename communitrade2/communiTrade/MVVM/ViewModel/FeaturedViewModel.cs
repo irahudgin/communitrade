@@ -13,15 +13,15 @@ using System.Windows.Controls;
 using System.Windows.Markup;
 
 namespace communiTrade.MVVM.ViewModel
-{  
-    internal class FeaturedViewModel : ObservableObject
+{
+    public class FeaturedViewModel : ObservableObject
     {
-        HttpClient client = new HttpClient();
+        private HttpClient client;
         private List<Item> _featuredItems;
 
         public List<Item> FeaturedItems
         {
-            get {  return _featuredItems; }
+            get { return _featuredItems; }
             set
             {
                 _featuredItems = value;
@@ -29,21 +29,33 @@ namespace communiTrade.MVVM.ViewModel
             }
         }
 
+
+        public FeaturedViewModel(HttpClient httpClient)
+        {
+            client = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
+        }
+
         public FeaturedViewModel()
         {
-            InitializeAsync();
         }
-        private async void InitializeAsync()
+
+        public async Task InitializeAsync()
         {
             client.BaseAddress = new Uri("https://localhost:7009/Trade/");
             client.DefaultRequestHeaders.Accept.Clear();
             client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
-            var server_response = await client.GetStringAsync("GetAllItems");
-            Response response_JSON = JsonConvert.DeserializeObject<Response>(server_response);
+            try
+            {
+                var server_response = await client.GetStringAsync("GetAllItems");
+                Response response_JSON = JsonConvert.DeserializeObject<Response>(server_response);
 
-            FeaturedItems = response_JSON.items;
+                FeaturedItems = response_JSON.items;
+            }
+            catch (Exception)
+            {
+                FeaturedItems = null;
+            }
         }
     }
-        
 }
