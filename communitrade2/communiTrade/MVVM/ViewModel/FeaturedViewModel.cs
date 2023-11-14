@@ -46,7 +46,7 @@ namespace communiTrade.MVVM.ViewModel
             client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
 
             try
-            {
+            {b 
                 var server_response = await client.GetStringAsync("GetAllItems");
                 Response response_JSON = JsonConvert.DeserializeObject<Response>(server_response);
 
